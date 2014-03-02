@@ -48,7 +48,6 @@ So, the current roadmap is :
  - [x] ~~Better Android 4.x integration (Jelly Bean notifications, lock screen controls)~~
  - Keep it the most up to date and best MPDroid client for android
  - ???
- - Profit
 
 ## Donations
 
