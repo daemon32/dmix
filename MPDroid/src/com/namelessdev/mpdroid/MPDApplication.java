@@ -181,12 +181,6 @@ public class MPDApplication extends Application implements ConnectionListener {
 		// dismiss possible dialog
 		dismissAlertDialog();
 		
-		// check for network
-		if (!NetworkHelper.isNetworkConnected(this.getApplicationContext())) {
-			connectionFailed("No network.");
-			return;
-		}
-		
 		// show connecting to server dialog
 		if (currentActivity != null) {
 			ad = new ProgressDialog(currentActivity);

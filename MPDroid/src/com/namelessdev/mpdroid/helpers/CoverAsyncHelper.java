@@ -38,7 +38,6 @@ import android.util.Log;
 import com.namelessdev.mpdroid.MPDApplication;
 import com.namelessdev.mpdroid.cover.CachedCover;
 import com.namelessdev.mpdroid.cover.ICoverRetriever;
-import com.namelessdev.mpdroid.cover.LastFMCover;
 import com.namelessdev.mpdroid.cover.LocalCover;
 import com.namelessdev.mpdroid.tools.Tools;
 
@@ -85,9 +84,6 @@ public class CoverAsyncHelper extends Handler {
 			switch (whichCoverRetrievers.get(i)) {
 				case CACHE:
 					this.coverRetrievers[i] = new CachedCover(app);
-					break;
-				case LASTFM:
-					this.coverRetrievers[i] = new LastFMCover();
 					break;
 				case LOCAL:
 					this.coverRetrievers[i] = new LocalCover(this.app, this.settings);
